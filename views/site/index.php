@@ -15,8 +15,6 @@ $this->title = 'My Yii Application';
         </div>
     <?php else:?>
         <div>
-            <?php echo HTML::a('Создать таблицы и наполнить их тестовыми данными', Url::to('/book/prepare'), ['class' => 'btn btn-primary']);?>
-            или
             <?php echo HTML::a('Перейти к списку книг', Url::to('/book/index'), ['class' => 'btn btn-primary']);?>
         </div>
     <?php endif;?>

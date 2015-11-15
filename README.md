@@ -17,19 +17,22 @@ curl -sS https://getcomposer.org/installer | php
 # Run composer:
 php composer.phar install
 
-# Run built-in web server
+# Edit the file config/db.php with real data (see example below)
+nano config/db.php
+
+# Run migrations to create tables and fill them with test data:
+php yii migrate
+
+# Run built-in web server:
 php -S 127.0.0.1:8080 -t web/
 
-# Open in browser the page
+# Open in browser the page:
 http://127.0.0.1:8080
 ```
 
-CONFIGURATION
--------------
+### Database configuration
 
-### Database
-
-Edit the file `config/db.php` with real data, for example:
+Example of `config/db.php` file:
 
 ```php
 return [

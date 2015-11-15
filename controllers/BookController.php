@@ -45,7 +45,6 @@ class BookController extends Controller
     {
         return [
             'error' => \yii\web\ErrorAction::class,
-            'prepare' => \app\actions\PrepareAction::class,
         ];
     }
 
